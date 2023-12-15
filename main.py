@@ -73,7 +73,7 @@ def monitor_tags(conn, tags):
                 print(f"WoL signal sent to {mac} for IP {ip}")
             else:
                 print(f"{ip} is online.")
-        time.sleep(2)  # Wait for 60 seconds before the next check
+        time.sleep(60)  # Wait for 60 seconds before the next check
 
 def main():
     parser = argparse.ArgumentParser(description="Manage and wake devices on a network.")
